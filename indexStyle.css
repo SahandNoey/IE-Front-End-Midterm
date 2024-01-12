@@ -3,6 +3,8 @@
     --border-color: rgb(207, 199, 154);
     --border-width: 3px;
     --border-style: solid;
+    --err-color:rgb(182, 2, 2);
+    --success-color:rgb(2, 112, 2);
 }
 
 /*window properties*/
@@ -16,7 +18,7 @@ body {
 
 /*center box background color*/
 #center-box { 
-   background-color: rgba(207, 199, 154, 0.5);
+   background-color: rgba(207, 199, 154, 0.6);
    position: fixed; 
    top: 60%;
    left: 50%;
@@ -76,11 +78,12 @@ body {
     width: 8em;
     font-family: 'Brush Script MT', cursive;
     font-size: large;
+    outline: none;
 
 }
 
-/* input sex */
-#input-sex {
+/* input gender */
+#input-gender {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -92,7 +95,7 @@ input[type="radio"] {
     appearance: none;
     border-style: var(--border-style);
     border-color: var(--border-color);
-    border-width: var(--border-width);
+    border-width: 2px;
     border-radius: 50%;
     height: 1em;
     width: 1em;
@@ -115,7 +118,7 @@ span {
 }
 
 /* submit and save config */
-#input-button {
+.input-button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -148,4 +151,22 @@ button {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 10em;
+}
+
+#err {
+    gap: 1em;
+    color: var(--err-color);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: smaller;
+    width: 15em;
+    max-width: 15em;
+    height: 3em;
+    
+}
+
+#gender {
+    width: 5em;
+    max-width: 5em;
 }

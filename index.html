@@ -12,15 +12,15 @@
 
             <div id="input-name">
                 <span>Name</span>
-                <input type="text">
+                <input type="text", id="box-name">
             </div>
             
-            <div id="input-sex">
+            <div id="input-gender">
                 <div>
-                    <input type="radio", name="sex", value="male"> <label>Male</label>
+                    <input type="radio", name="gender", value="male"> <label>Male</label>
                 </div>
                 <div>
-                    <input type="radio", name="sex", value="female"> <label>Female</label>
+                    <input type="radio", name="gender", value="female"> <label>Female</label>
                 </div>
             </div>
 
@@ -28,21 +28,25 @@
                 <button id="submit">Submit</button>
                 <button id="save">Save</button>
             </div>
+
+            <p id="err">Error Message</p>
             
         </div>
 
         <div class="column-div"> <!--Right column div-->
             <h1 class="topic">Prediction</h1>
             <div id="api-response">
-                <span>prediction</span>
-                <span>accuracy</span>
+                <span id="gender">Gender: -</span>
+                <span id="probability">Probability: -</span>
             </div>
 
             <div id="saved-answer">
-                <span>Saved Answer</span>
-                <button> Clear</button>
+                <span id="saved-gender">Saved Answer</span>
+                <button id="clear"> Clear</button>
             </div>
         </div>
     </div>
+
+    <script src="indexScript.js"></script>
 </body>
 </html>
