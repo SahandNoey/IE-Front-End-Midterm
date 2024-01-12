@@ -2,5 +2,5 @@
   Internet Engineering Front-End project
 </h1>
 <h3>
-  Use this <a href="sahandnoey.github.io/ie-front-end-midterm/">link</a> to access the website.
+  Use this <a href="https://sahandnoey.github.io/IE-Front-End-Midterm/">link</a> to access the website.
 </h3>
