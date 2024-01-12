@@ -40,6 +40,8 @@ body {
 
 }
 
+
+/* left and right column of center box */
 .column-div {
     display: flex;
     flex-direction: column;
@@ -48,10 +50,13 @@ body {
 }
 
 
+/* topic of each left and right column */
 .topic {
     font-family: 'Brush Script MT', cursive;
 }
 
+
+/* name input */
 #input-name {
     display: flex;
     flex-direction: row;
@@ -60,6 +65,7 @@ body {
     gap: 1em;
 }
 
+/* name input box */
 #input-name input[type="text"] {
     border-radius: 10px;
     border-width: var(--border-width);
@@ -73,6 +79,7 @@ body {
 
 }
 
+/* input sex */
 #input-sex {
     display: flex;
     flex-direction: column;
@@ -80,6 +87,7 @@ body {
     gap: 1em;
 }
 
+/* radio button */
 input[type="radio"] {
     appearance: none;
     border-style: var(--border-style);
@@ -90,18 +98,23 @@ input[type="radio"] {
     width: 1em;
 }
 
+/* labels font size */
 label {
     font-size: 1.3em;
 }
 
+/* radio button background color */
 input[type="radio"]:checked {
     background-color: var(--border-color);
 }
 
+
+/* span font size */
 span {
     font-size: 1.5em;
 }
 
+/* submit and save config */
 #input-button {
     display: flex;
     flex-direction: column;
@@ -111,6 +124,7 @@ span {
     
 }
 
+/* button config */
 button {
     font-size: large;
     width: 5em;
@@ -122,18 +136,16 @@ button {
     font-family: 'Brush Script MT', cursive;
 }
 
+/* api response */
 #api-response{
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
+/* saved answer */
 #saved-answer{
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-
-
-
-
