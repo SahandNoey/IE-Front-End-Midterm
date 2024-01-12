@@ -119,6 +119,7 @@ button {
     border-color: var(--border-color);
     border-width: var(--border-width);
     border-radius: 10px;
+    font-family: 'Brush Script MT', cursive;
 }
 
 #api-response{
