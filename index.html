@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8" />
     <title>Mr. or Ms.?</title> <!--Tab title-->
+    <link rel="stylesheet", href="indexStyle.css", type="text/css">
 </head>
 <body>
-    <div>
-        <div> <!--Left column div-->
-            <h1>Mr. or Ms.?</h1>
+    <div id="center-box">
+        <div class="column-div"> <!--Left column div-->
+            <h1 class="topic">Mr. or Ms.?</h1>
 
-            <h4>Name</h4>
-            <input type="text", id="inputName">
+            <div id="input-name">
+                <span>Name</span>
+                <input type="text">
+            </div>
+            
+            <div id="input-sex">
+                <div>
+                    <input type="radio", name="sex", value="male"> <label>Male</label>
+                </div>
+                <div>
+                    <input type="radio", name="sex", value="female"> <label>Female</label>
+                </div>
+            </div>
 
-            <input type="radio", name="sex", value="male"> Male
-            <input type="radio", name="sex", value="female"> Female
-
-            <input type="button", id="submit"> Submit
-            <input type="button", id="save"> Save
+            <div id="input-button">
+                <button id="submit">Submit</button>
+                <button id="save">Save</button>
+            </div>
+            
         </div>
-        <div> <!--Right column div-->
-            <h1>Prediction</h1>
-            <h4>prediction</h4>
-            <h4>accuracy</h4>
-            <div> <!--Saved Answer div-->
-                <h3>Saved Answer</h3>
-                <button>Clear</button>
+
+        <div class="column-div"> <!--Right column div-->
+            <h1 class="topic">Prediction</h1>
+            <div id="api-response">
+                <span>prediction</span>
+                <span>accuracy</span>
+            </div>
+
+            <div id="saved-answer">
+                <span>Saved Answer</span>
+                <button> Clear</button>
             </div>
         </div>
     </div>
